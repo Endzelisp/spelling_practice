@@ -1,0 +1,33 @@
+.index-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.index-header h1 {
+  text-align: center;
+  padding: 16px 0 24px;
+}
+
+.index-links-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-links-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.index-links-wrapper li {
+  text-align: center;
+}
+
+.index-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
