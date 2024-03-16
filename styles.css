@@ -15,3 +15,27 @@ li {
 a {
   text-decoration: none;
 }
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+}
+
+.header h1 {
+  text-align: center;
+  padding: 16px 0 24px;
+}
+
+.app-content-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
