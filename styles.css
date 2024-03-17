@@ -38,6 +38,11 @@ a {
   height: inherit;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+}
+
 .header h1 {
   text-align: center;
   padding-top: 16px;
