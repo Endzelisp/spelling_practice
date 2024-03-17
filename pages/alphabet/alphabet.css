@@ -1,0 +1,25 @@
+.alphabet-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  
+}
+
+.letter {
+  font-size: 1.5rem;
+  padding: 12px 24px;
+}
+
+@media (max-width: 600px) {
+  .alphabet-wrapper {
+    width: 90vw;
+  }
+
+  .letter {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}
