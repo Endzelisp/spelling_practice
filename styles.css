@@ -11,6 +11,7 @@
 }
 
 :root {
+  --vivid-red: hsl(348, 100%, 56%);
   --light-blue: hsl(203, 95%, 57%);
   --medium-blue: hsl(215, 90%, 60%);
   --dark-blue: hsl(216, 60%, 34%);
