@@ -8,9 +8,22 @@
   
 }
 
-.letter {
+button.letter {
+  --letter-box-size: 3.6rem;
+  width: var(--letter-box-size);
+  height: var(--letter-box-size);
   font-size: 1.5rem;
-  padding: 12px 24px;
+  color: var(--pure-white);
+  font-weight: 700;
+  border: none;
+  background-color: var(--light-blue);
+  box-shadow: 3px 3px 10px 3px var(--gray-80),
+              2px 2px 4px 1px var(--gray-60);
+}
+
+button.letter:active {
+  box-shadow: 3px 3px 10px 3px var(--gray-80),
+              1px 1px 2px 1px var(--gray-60);
 }
 
 @media (max-width: 600px) {
