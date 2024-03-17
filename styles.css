@@ -14,6 +14,9 @@
   --light-blue: hsl(203, 95%, 57%);
   --medium-blue: hsl(215, 90%, 60%);
   --dark-blue: hsl(216, 60%, 34%);
+  --pure-white: hsl(0, 0%, 100%);
+  --gray-80: hsl(0, 0%, 80%);
+  --gray-60: hsl(0, 0%, 60%);
 }
 
 html, body {
