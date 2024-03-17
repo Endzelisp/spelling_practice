@@ -4,11 +4,6 @@ body {
   background-size: 180px;
 }
 
-.header {
-  display: flex;
-  justify-content: center;
-}
-
 .spacer {
   min-width: 100px;
 }
