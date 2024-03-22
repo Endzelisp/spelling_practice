@@ -17,14 +17,23 @@
     </header>
     <section class="app-content-wrapper">
       <form id="form" class="form">
-        <input
-          type="text"
-          id="user-answer-input"
-          placeholder="Your answer here"
-          autocomplete="off"
-          required
-        >
-        <button type="button" id="spell-n-validate-btn">Listen</button>
+        <h2 id="validation-message"></h2>
+        <label for="user-answer-input" id="user-input-wrapper">
+          <button type="button" id="play-btn" aria-label="play">
+            <img src="../../assets/play-icon.png" alt="play icon" width="48">
+          </button>
+          <input
+            type="text"
+            id="user-answer-input"
+            placeholder="Your answer here..."
+            autocomplete="off"
+            required
+          >
+        </label>
+        <div id="user-control-buttons">
+          <button type="submit" id="validate-btn">Check</button>
+          <button type="reset" id="next-word">Next</button>
+        </div>
       </form>
     </section>
     <footer class="footer">
