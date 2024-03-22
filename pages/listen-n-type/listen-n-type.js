@@ -23,7 +23,7 @@ addEventListener('DOMContentLoaded', () => {
 
 formEl.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (userAnser === '') return
-  const userAnser = userAnswerInput.value;
+  const userAnswer = userAnswerInput.value;
+  if (userAnswer === '') return
 
 })
