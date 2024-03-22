@@ -12,7 +12,3 @@ export function spell(audioArray) {
     },{once: true})
   }
 }
-
-export function getAlphabetAudioArray(alphabet, path) {
-  return alphabet.map((letter) =>  new Audio(`${path}${letter}.mp3`))
-}
