@@ -1,9 +1,12 @@
 import { ALPHABET } from '../../constants.js';
-import { getAlphabetAudioArray } from '../../utils.js';
 
 const alphabetWrapper = document.querySelector('.alphabet-wrapper');
 
 const PATH = '../../assets/letters/';
+
+function getAlphabetAudioArray(alphabet, path) {
+  return alphabet.map((letter) =>  new Audio(`${path}${letter}.mp3`))
+}
 
 const alphabetAudioArray = getAlphabetAudioArray(ALPHABET, PATH);
 
@@ -22,7 +25,3 @@ const lettersButtonsArray = alphabetAudioArray.map((audioLetter, index) => {
 });
 
 alphabetWrapper.append(...lettersButtonsArray);
-
-
-
-
