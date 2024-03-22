@@ -23,7 +23,9 @@ addEventListener('DOMContentLoaded', () => {
 
 formEl.addEventListener('submit', (e) => {
   e.preventDefault();
-  const userAnswer = userAnswerInput.value;
+  const userAnswer = userAnswerInput.value.trim().toLowerCase();
   if (userAnswer === '') return
-
+  const isValid = userAnswer === currentWord;
+  if (isValid) validationMessage.textContent = 'Correct!'
+  else validationMessage.textContent = 'Try again'
 })
