@@ -29,3 +29,10 @@ formEl.addEventListener('submit', (e) => {
   if (isValid) validationMessage.textContent = 'Correct!'
   else validationMessage.textContent = 'Try again'
 })
+
+formEl.addEventListener('reset', () => {
+  userAnswerInput.value = '';
+  validationMessage.textContent = '';
+  const randomIndex = getRandomNum(COMMON_WORDS.length);
+  currentWord = COMMON_WORDS[randomIndex];
+})
