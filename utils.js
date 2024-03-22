@@ -6,7 +6,7 @@
  * @param { string } path path where audio files are stored
  * @returns an array of audio elements
  */
-function getAudioArray (word, path) {
+export function getAudioArray (word, path) {
   const wordSplited = word.toUpperCase().split('')
   return wordSplited.map((letter) => {
     return new Audio(`${path}${letter}.mp3`)
