@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../../styles.css">
   <link rel="stylesheet" href="./type-n-listen.css">
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+  <script type="module" src="./type-n-listen.js"></script>
 </head>
 <body>
   <main class="main-wrapper">
@@ -15,12 +16,23 @@
       <h1>Type and Listen</h1>
     </header>
     <section class="app-content-wrapper">
-      <form>
+      <form id="form-wrapper">
+        <div id="word-spelled-wrapper">
+          <h2 id="word-spelled"></h2>
+        </div>
         <label for="user-input">
-          type any word here
-          <input type="text" name="user-input" id="user-input" placeholder="Type any word here">
+          type any word to spell it
+          <input
+            type="text"
+            name="user-input"
+            id="user-input"
+            placeholder="Type a single word here"
+            autocomplete="off">
         </label>
-        <button type="button" id="play-button">play</button>
+        <div class="button-control-wrapper">
+          <button type="submit">Spell</button>
+          <button type="reset">Clear</button>
+        </div>
       </form>
     </section>
     <footer class="footer">
