@@ -1,4 +1,4 @@
-import { spell } from "../../utils.js";
+import { spell, getAudioArray } from "../../utils.js";
 
 const formEl = document.querySelector('#form-wrapper');
 const userInputEl = document.querySelector('#user-input');
@@ -10,7 +10,7 @@ formEl.addEventListener('submit', (e) => {
   const userInputValue = userInputEl.value;
   if (userInputValue === '') return
   wordSpelledDiplay.textContent = userInputValue;
-  const spellingAudioArray = getAudioArray(userInputValue);
+  const spellingAudioArray = getAudioArray(userInputValue, PATH);
   spell(spellingAudioArray);
 })
 
