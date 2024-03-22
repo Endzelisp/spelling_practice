@@ -1,0 +1,47 @@
+#form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#word-spelled-wrapper {
+  height: 5.625rem;
+  max-height: 120px;
+  padding-block-end: 50px;
+}
+
+#form-wrapper h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+}
+
+label[for="user-input"] {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--gray-20);
+}
+
+label[for="user-input"] > input {
+  padding: 8px;
+  font-size: 1.25rem;
+}
+
+.button-control-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.button-control-wrapper > button {
+  margin-block: 30px;
+  width: fit-content;
+  padding: 6px 16px;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  label[for="user-input"] > input {
+    width: 90vw;
+  }
+}
