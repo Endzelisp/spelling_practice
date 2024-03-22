@@ -1,5 +1,5 @@
 /**
- * Transform a string into an array of Audio elements to play them
+ * Transform a string into an array of audio elements to play them
  * individually
  * 
  * @param { string } word word to be spelled
@@ -17,7 +17,7 @@ function getAudioArray (word, path) {
  * Plays each audio element inside of the array
  * one after the other
  * 
- * @param { [HTMLAudioElement] } audioArray 
+ * @param { [HTMLAudioElement] } audioArray array of audio elements
  */
 export function spell(audioArray) {
   audioArray[0].play()
