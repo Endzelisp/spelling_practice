@@ -6,7 +6,7 @@
   <title>Listen and Type</title>
   <link rel="stylesheet" href="../../reset.css">
   <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="./listen-n-type.html">
+  <link rel="stylesheet" href="./listen-n-type.css">
   <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
   <script type="module" src="./listen-n-type.js"></script>
 </head>
@@ -16,7 +16,7 @@
       <h1>Listen and Type</h1>
     </header>
     <section class="app-content-wrapper">
-      <form id="form">
+      <form id="form" class="form">
         <input
           type="text"
           id="user-answer-input"
@@ -24,7 +24,7 @@
           autocomplete="off"
           required
         >
-        <button type="submit">Check</button>
+        <button type="button" id="spell-n-validate-btn">Listen</button>
       </form>
     </section>
     <footer class="footer">
