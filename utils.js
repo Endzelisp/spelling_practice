@@ -1,17 +1,4 @@
 /**
- * Take a string as a parameter and an object containing the alphabet 
- * where each key is a letter and the value is an audio object
- * 
- * @param { string } word 
- * @param { {HTMLAudioElement} } alphabetAudioObject 
- * @returns {[HTMLAudioElement]} An array with the audio of each corresponding
- * letter
- */
-export function getAudioArray(word, alphabetAudioObject) {
-  return word.split('').map((letter) => alphabetAudioObject[letter]);
-}
-
-/**
  * Plays each audio element inside of the array
  * one after the other
  * 
