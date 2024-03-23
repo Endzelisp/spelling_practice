@@ -51,6 +51,12 @@ export function stringWithoutSymbols(text) {
     .join('')
 }
 
+/**
+ * Capitalize the first letter of a string
+ * 
+ * @param { string } string Text that will be transformed 
+ * @returns 
+ */
 export function capitalize(string) {
   const splitText = string.split('');
   splitText[0] = splitText[0].toUpperCase(); 
