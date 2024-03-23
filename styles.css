@@ -73,10 +73,13 @@ a {
   color: var(--gray-40)
 }
 
-.footer > a {
+.footer-link-layout {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.footer-link-style {
   color: var(--gray-20);
   font-weight: 700;
 }
