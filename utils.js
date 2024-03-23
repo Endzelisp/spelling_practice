@@ -50,3 +50,9 @@ export function stringWithoutSymbols(text) {
     .filter((letter) => letter.match(justLettersRegex))
     .join('')
 }
+
+export function capitalize(string) {
+  const splitText = string.split('');
+  splitText[0] = splitText[0].toUpperCase(); 
+  return splitText.join('');
+}
