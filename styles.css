@@ -80,3 +80,15 @@ a {
   color: var(--gray-20);
   font-weight: 700;
 }
+
+.user-control-button {
+  padding: 6px 16px;
+  font-size: 1.5rem;
+  color: var(--pure-white);
+  text-shadow: 1px 1px 1px var(--gray-40);
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid var(--dark-blue);
+  border-right: 2px solid var(--dark-blue);
+  background-color: var(--light-blue);
+}
