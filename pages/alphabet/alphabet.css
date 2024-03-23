@@ -12,10 +12,12 @@ button.letter {
   --letter-box-size: 3.6rem;
   width: var(--letter-box-size);
   height: var(--letter-box-size);
+  line-height: normal;
   font-size: 1.5rem;
   color: var(--pure-white);
   font-weight: 700;
   border: none;
+  border-radius: 5px;
   background-color: var(--light-blue);
   box-shadow: 3px 3px 10px 3px var(--gray-80),
               2px 2px 4px 1px var(--gray-60);
@@ -29,10 +31,12 @@ button.letter:active {
 @media (max-width: 600px) {
   .alphabet-wrapper {
     width: 90vw;
+    gap: 12px;
   }
 
-  .letter {
-    font-size: 1rem;
-    padding: 12px 20px;
+  button.letter {
+    --letter-box-size: 1.75rem;
+    box-sizing: content-box;
+    padding: 8px 8px;
   }
 }
