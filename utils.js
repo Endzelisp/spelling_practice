@@ -36,3 +36,17 @@ export function spell(audioArray) {
 export function getRandomNum(maxNumber) {
   return Math.floor(Math.random() * maxNumber);
 }
+
+/**
+ * Clean up a string from any symbol
+ * 
+ * @param {string} text String to be cleaned
+ * @returns {string}
+ */
+export function stringWithoutSymbols(text) {
+  const justLettersRegex = /[a-z\s\n\r]/;
+  return text
+    .split('')
+    .filter((letter) => letter.match(justLettersRegex))
+    .join('')
+}
