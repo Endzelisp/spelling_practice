@@ -13,7 +13,6 @@
 #form-wrapper h2 {
   text-align: center;
   font-size: 2.25rem;
-  text-transform: capitalize;
 }
 
 label[for="user-input"] {
